@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('../../fonts/AvenirLTStd-Roman.woff2') format('woff2'),
+        url('../../fonts/AvenirLTStd-Roman.woff') format('woff'),
+        url('../../fonts/AvenirLTStd-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('../../fonts/AvenirLTStd-Book.woff2') format('woff2'),
+        url('../../fonts/AvenirLTStd-Book.woff') format('woff'),
+        url('../../fonts/AvenirLTStd-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('../../fonts/AvenirLTStd-Black.woff2') format('woff2'),
+        url('../../fonts/AvenirLTStd-Black.woff') format('woff'),
+        url('../../fonts/AvenirLTStd-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+} 
+
+:root{
+    --very-dark-cyan: #040814;
+    --purple:#6421ff;
+    --blue: #0063e5;
+    --light-blue: #016cf9;
+    --white: #f9f9f9;
+    --gray: #a8a8aa;
+    --very-dark-gray: #13151d;
+    --container-padding: 8em 0px 5em;
+}
+ 
+img{
+    display: block;
+    height: 100%;
+    width: 100%;;
+}
+ 
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: 'Avenir LT Std', sans-serif;
+
+}
+
+html{
+    background-color:#000000;
+
+}
+
+.container{
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto; 
+}
+
+.title{
+    font-size: 1.2rem;
+padding: 5px;
+    color:#000000;
+    text-align: center;
+}
+
+.paragraph{
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #000000;
+}
+
+@media (768px < width) {
+
+    .title{
+        font-size: 1.8rem;
+        /* line-height: 5.5rem; */
+    }
+
+    .paragraph, .dropdown__title{
+        font-size: 1.2em;
+    }
+
+}
+
+@media (1024px < width) {
+
+    .title{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        /* background-color: #6421ff; */
+    }
+
+    .paragraph{
+        font-size: 1.4em;
+        line-height: 2rem;
+        /* background-color: #0063e5; */
+    }
+}
+
+
+.navbar{
+	width: 100%;
+	height: auto;
+	position: fixed;
+	justify-content: center;
+        color: #fff;
+	bottom: 50px;
+	left: 0;
+	padding: 15px 5px 0px 5px;
+	background: #009dff;
+	z-index: 9;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+  border-bottom: 3px solid #0287db;
+}
+
+.navbar1{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	justify-content: center;
+        color: #fff;
+	bottom: 0;
+	left: 0;
+	padding: 5px 0px 5px 0px;
+	background: #fff;
+	z-index: 9;
+	display: flex;
+	align-items: center;
+}
+
+.navbar2{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	justify-content: center;
+        color: #fff;
+	bottom: 115.5px;
+	left: 0;
+	padding: 0px;
+	background: #000;
+        opacity: 0.1;
+	z-index: 9;
+	display: flex;
+	align-items: center;
+}
+
+
+/* Outer container - the padding will keep the container the correct proportions for the video */
+.banner {
+	max-width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+  padding-bottom: 43.0%;
+  margin-top: 15px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.videoembed {
+  position: absolute;
+  top: 0;
+  /*z-index: -99; */
+  width: 100%; 
+  height: auto;
+  background: #333;
+}
+
+/* If you want to include the title... */
+.banner-title {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  padding: 20px 40px;
+  text-align: center;
+  box-sizing:border-box;
+}
+
+.banner-title h1 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+/* small calption - optional */
+.caption {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-style:italic;
+}
+
+.boddbtno {margin-top:20px;text-align:center;color:#fff !important;list-style:none;margin-left:0px !important;padding:0px !important;font-size:12px;display:inline-block;margin-bottom:20px;text-decoration:none !important;clear:both;}
+.boddbtno ul {padding:0;margin:0;}
+.boddbtno li {list-style:none;display:inline;padding:0;margin:5px;}
+
+.downloadbtno{background:#1f80e0;color: #fff; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; !important;padding:8px 10px 8px 10px;font-size:13px;font-weight:700;text-transform:uppercase;text-align:center;border-radius:10px;border:0;letter-spacing:1px;transition: all 0.2s ease-out;text-decoration:none !important;}
+.downloadbtno {background: linear-gradient(45deg, #f7149a, #e32997)}
+.downloadbtno:hover {background:#495878;color: #fff;}
+
+
+
+.downloadbtns{background:#1f80e0;color: #fff; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; !important;padding:5px 10px 5px 10px;font-size:15px;font-weight:700;text-transform:uppercase;text-align:center;border-radius:5px;border:0;letter-spacing:1px;transition: all 0.2s ease-out;text-decoration:none !important;}
+.downloadbtns {background: linear-gradient(45deg, #f7149a, #e32997)}
+.downloadbtns:hover {background:#495878;color: #fff;}
+
+.name{  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; !important
+	color: #fff;
+	font-size: 15px;
+	font-weight: 550;
+
+}
+
+/* Outer container - the padding will keep the container the correct proportions for the video */
+.bannero {
+	max-width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+  padding-bottom: 56.2%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.videoembedo {
+  position: absolute;
+  top: 0;
+  /*z-index: -99; */
+  width: 100%; 
+  height: auto;
+  background: #333;
+}
+
+.titleo{
+    font-size: 1.1rem;
+    color: #009dff;
+    text-align: center;
+}
+
+.paragrapho{
+    font-size: 0.9em;
+    line-height: 1em;
+    color: #009dff;
+    font-weight: 500;
+}
+
+@media (768px < width) {
+
+    .titleo{
+        font-size: 1.8rem;
+        /* line-height: 4.5rem; */
+    }
+
+    .paragrapho, .dropdown__title{
+        font-size: 1.2em;
+    }
+
+}
+
+@media (1024px < width) {
+
+    .titleo{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        /* background-color: #6421ff; */
+    }
+
+    .paragrapho{
+        font-size: 1.4em;
+        line-height: 3rem;
+        /* background-color: #0063e5; */
+    }
+}
+
+/*style untuk popup */
+#popup {
+width:100%;
+z-index:1000;
+background-color: rgba(0,0,0,0.3);
+position: fixed;
+top:0;
+left:0;
+right:0;
+bottom:0;
+margin:0;
+}
+#popup:target {
+opacity: 0;
+visibility: hidden;
+}@media {
+.popup-container{
+width:80%;
+}
+}
+@media {
+.popup-container{
+width:80%;
+}
+}
+.popup-container {
+  justify-content: center;
+  align-items: center;
+bottom:100px;
+margin-left:10%;
+margin-right:10%;
+position: fixed;
+padding:5px 10px;
+border-radius: 15px;
+background:  rgba(255, 255, 255,0.9);
+color:#fff;
+}
